@@ -1,0 +1,17 @@
+<div>
+    <h1 class="tittle">Hacker News Jobs Board</h1>
+    <h3 *ngIf="loading">Loading.....</h3>
+    <div *ngIf="!loading"class="container">
+        <div  class="cards" *ngFor="let job of JobData ">
+            <h3 class="job_id" >{{job.id}}
+                <a *ngIf="job.url" href="{{ job.url }}" target="_blank" class="title_with_url">{{ job.title }}</a>
+                <span *ngIf="!job.url" class="title">{{job.title}} </span>
+            </h3>
+            <p class="date">
+                By {{job.by}}. {{job.time | date: 'medium'}}
+            </p>
+
+        </div>
+    </div>
+    <button *ngIf="JobData.length <jobIDs.length " (click)="loadMore()" class="load_more">{{loadMoreClicked? 'Loading...':'Load more jobs'}}</button>
+</div>

@@ -1,0 +1,41 @@
+.tittle{
+    color: #FE7723;
+}
+
+.cards{
+    padding-left: 15px;
+    border: .3px solid rgb(207, 207, 207);
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.job_id{
+    font-size: 14px;
+}
+.title_with_url{
+    color: inherit; 
+    text-decoration: none;
+}
+.title_with_url:hover{
+    text-decoration: underline;
+}
+.load_more{
+    background-color: #ff7300;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.load_more:hover{
+    background-color:white;
+    color: #ff7300;
+    border:1px solid #ff7300;
+}
+
+.date{
+    font-size: 12px;
+}
